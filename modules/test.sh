@@ -1,2 +1,2 @@
 #!/bin/bash
-zenity --text="HI" --info
+zenity --text="Hello World" --info
