@@ -9,7 +9,7 @@ fi
 IFS=" " read cmd argument <<< $input
 if [ $input = "specialis revelio" ]
 then
-	cmd=$DIR"/modules/specialis revelio.sh"
+	zenity --icon-name= --text="This program is the property of the Quarter Bone Peasant" --width=500 --info
 else
 	unset IFS
 	cmd=$DIR"/modules/"$cmd".sh \"$argument\""
