@@ -1,7 +1,6 @@
 #!/bin/bash
 IFS=
 arg=""
-for word in $*; do arg=$arg$word" "; echo $word; done
 temp=${arg#?}
 cmd=${temp::-2}
 echo $cmd" test"
@@ -11,5 +10,5 @@ then
 	gnome-terminal
 else
 	unset IFS
-	gnome-terminal --command="bash -c '$cmd; $SHELL'"
+	gnome-terminal -- "bash -c '$cmd; $SHELL'"
 fi
